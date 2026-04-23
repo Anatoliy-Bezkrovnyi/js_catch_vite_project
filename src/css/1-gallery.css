@@ -1,0 +1,14 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-left: 154px;
+  margin-right: 154px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  max-height: 200px;
+}
