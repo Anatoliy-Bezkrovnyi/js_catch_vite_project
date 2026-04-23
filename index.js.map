@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":["../src/js/index.js"],"sourcesContent":["\"use strict\";\n\nconsole.log(\"Hello from index.js\");"],"names":[],"mappings":"ssBAEA,QAAQ,IAAI,qBAAqB"}
+{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
