@@ -1,4 +1,6 @@
-"use strict";
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 
 const images = [
   {
@@ -70,16 +72,20 @@ const imageGallery = document.querySelector(".gallery");
 
 const galleryImageMarkup = images
   .map(({ preview, original, description }) => `<li class="gallery-item">
-  <a class="gallery-link" href="${original} ">
-    <img
-      class="gallery-image"
-      src="${preview}"
-      data-source="${original}"
-      alt="${description}"
-    />
-  </a>
+	<a class="gallery-link" href="${original}">
+		<img
+			class="gallery-image"
+			src="${preview}"
+			alt="${description}"
+			/>
+	</a>
 </li>`)
   .join("");
 
 imageGallery.insertAdjacentHTML("afterbegin", galleryImageMarkup);
+
+new SimpleLightbox(`.gallery-link`, {
+  captionsData: "alt",
+  captionDelay: 250,
+});
 
